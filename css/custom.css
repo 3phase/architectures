@@ -13,3 +13,13 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0 auto;	
 	display: block;
 }
+#status {
+	height: 100px;
+	background-color: #FF0000;
+}
+#status p {
+	color: #FFF;
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 100px;
+}
