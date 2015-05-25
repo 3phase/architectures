@@ -3,10 +3,91 @@
 <head>
 	<title>Project Page <3</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+   	<link href="css/full-slider.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style type="text/css">
+		.navbar-inverse {
+			border-radius: 0px;
+		}
+	</style>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-	  
-	</nav>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Lung</a>
+			</div>
+			<div class="collapse navbar-collapse">
+			  <ul class="nav navbar-nav">
+			    <li class="active"><a href="#">Home</a></li>
+			    <li><a href="#about">About</a></li>
+			    <li><a href="#download">App</a></li>
+			    <li><a href="#status">Server status</a></li>
+			    <li><a href="https://github.com/3phase/architectures" target="_blank">Source Code</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://whisperedinspirations.com/wp-content/uploads/2013/11/girl-phone.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Take your Lung on the go.</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://drosier.files.wordpress.com/2012/08/august-2012-schema-chart.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Trust the charts.</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://www.besteducationnews.com/wp-content/uploads/2014/03/533d3__coding-011.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Get the source</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script>
+	    $('.carousel').carousel({
+	        interval: 5000 //changes the speed
+	    })
+    </script>
 </body>
 </html>
