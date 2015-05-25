@@ -23,3 +23,14 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 1.3em;
 	line-height: 100px;
 }
+#register {
+	height: 300px;
+}
+.sub_container {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.sub_container div {
+	margin: 15px;
+}

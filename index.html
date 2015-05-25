@@ -100,9 +100,28 @@
 	    </div>
     </div>
     <div id="status">
-    	<p class="serverOnAir">Server is currently not working, please excuse us :(</p>
+    	<p>Server is currently not working, please excuse us :(</p>
     </div>
-
+    <div id="register">
+    	<div class="container">
+    		<h2>Register</h2>
+    		<div class="sub_container">
+    			<form action="http://192.168.0.101/architectures/register.php" method="POST">
+		    		<div class="input-group input-group-lg">
+					  <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-user"></span></span>
+					  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" name="username">
+					</div>
+					<div class="input-group input-group-lg">
+					  <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-log-in"></span></span>
+					  <input type="text" class="form-control" placeholder="Read API key" aria-describedby="sizing-addon1" name="apikey">
+					</div>
+					<div class="input-group input-group-lg">
+						<button type="submit" class="btn btn-default" style="height: 40px;" name="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+    	</div>
+    </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
@@ -124,7 +143,7 @@
 			http.onreadystatechange = function() {
 				var statusField = document.getElementById("status");
 			    if(http.readyState == 4 && http.status == 200) {
-					statusField.innerHTML = "<p class=\"serverOnAir\">Server is running properly.</p>";
+					statusField.innerHTML = "<p>Server is running properly.</p>";
 					statusField.style.backgroundColor="#2D9E09";
 			    }
 			}
