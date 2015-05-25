@@ -34,6 +34,18 @@ h1,h2,h3,h4,h5,h6 {
 .sub_container div {
 	margin: 15px;
 }
+#footer {
+	/*height: 200px;*/
+	background-color: #1F292C;
+	color: #FFF;
+	padding: 0 0 20px;
+}
+#footer p {
+	text-align: center;
+}
+#footer a {
+	color: #FFF;
+}
 @media(max-width: 900px) {
 	.sub_container {
 		width: 100%;
