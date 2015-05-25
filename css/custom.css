@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
 .sub_container div {
 	margin: 15px;
 }
-@media(max-width: 600px) {
+@media(max-width: 900px) {
 	.sub_container {
 		width: 100%;
 	}
