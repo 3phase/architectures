@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lung - IoT School project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+   	<link href="css/full-slider.css" rel="stylesheet">
+   	<link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+    	var serverStatus = 0;
+    </script>
+	<style type="text/css">
+		.navbar-inverse {
+			border-radius: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#" style="color: #FFF">Lung</a>
+			</div>
+			<div class="collapse navbar-collapse">
+			  <ul class="nav navbar-nav">
+			    <li><a href="#">Home</a></li>
+			    <li><a href="#about">About</a></li>
+			    <li><a href="#download">App</a></li>
+			    <li><a href="#status">Server status</a></li>
+			    <li><a href="#register">Register</a></li>
+			    <li><a href="https://github.com/3phase/architectures" target="_blank">Source Code</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://whisperedinspirations.com/wp-content/uploads/2013/11/girl-phone.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Get your Lung on the go.</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://drosier.files.wordpress.com/2012/08/august-2012-schema-chart.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Care about the charts.</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://www.besteducationnews.com/wp-content/uploads/2014/03/533d3__coding-011.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Modify with love</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+    <div id="about">
+    	<div class="container">
+			<h2>About</h2>
+			<p>Have you ever thought that the light in the room you work isn't enough? Or that the temperature in the aquarium your lizzard-pet lives is too high? Well... We've been wondering about the same. That's why we created <i>Lung</i>. Easy-to-use, Lung provides you realtime information about the condition it is situated into. From now on, you will never have to guess the living factors in your room again.</p>
+    	</div>
+    </div>
+    <div id="download">
+    	<div class="container">
+	    	<h2>Download Lung App</h2>
+	    	<button type="button" class="btn btn-success" style="height: 50px;"><span class="glyphicon glyphicon-download-alt" style="margin-right: 10px"></span>Download</button> 
+	    	<p style="text-align: center">(.apk, ~5MB)</p>
+	    </div>
+    </div>
+    <div id="status">
+    	<p>Server is currently not working, please excuse us :(</p>
+    </div>
+    <div id="register">
+    	<div class="container">
+    		<h2>Register</h2>
+    		<div class="sub_container">
+    			<form action="http://3phase.github.io/architectures" method="POST"><!--"http://192.168.0.101/architectures/register.php"-->
+		    		<div class="input-group input-group-lg">
+					  <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-user"></span></span>
+					  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" name="username">
+					</div>
+					<div class="input-group input-group-lg">
+					  <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-log-in"></span></span>
+					  <input type="text" class="form-control" placeholder="Read API key" aria-describedby="sizing-addon1" name="apikey">
+					</div>
+					<div class="input-group input-group-lg">
+						<button type="submit" class="btn btn-default" style="height: 40px;" name="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+    	</div>
+    </div>
+    <div id="footer">
+    	<div class="container">
+    		<h2>Lung</h2>
+    		<p>&copy; 2015<br>N.M., P.B., T.L. @ <a href="http://tues.bg" target="_blank">Elsys</a> <br> IoT School Project<br> <a href="http://opensource.org/licenses/MIT" target="_blanK">MIT License</a></p>
+    	</div>
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script>
+	    $('.carousel').carousel({
+	        interval: 5000 //changes the speed
+	    })
+    </script>
+    <script type="text/javascript">
+	    window.onload = function httpGet() {
+		    // var xmlHttp = new XMLHttpRequest();
+		    // xmlHttp.open( "GET", "http://192.168.0.101/architectures/register.php", false );
+		    // xmlHttp.send( null );
+		    // console.log(xmlHttp.responseText);
+		    var url = "http://192.168.0.101/architectures/register.php";
+			var params = "exists=1";
+		    var http = new XMLHttpRequest();
+			http.open("GET", url+"?"+params, true);
+			http.onreadystatechange = function() {
+				var statusField = document.getElementById("status");
+			    if(http.readyState == 4 && http.status == 200) {
+					statusField.innerHTML = "<p>Server is running properly.</p>";
+					statusField.style.backgroundColor="#2D9E09";
+			    }
+			}
+			http.send(null);
+		}
+    </script>
+</body>
+</html>
