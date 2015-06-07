@@ -4,6 +4,13 @@ h1,h2,h3,h4,h5,h6 {
 #about {
 	height: 400px;
 }
+#about p {
+	font-size: 1.4em;
+	margin-top: 50px;
+	padding-left: 20px;
+	line-height: 37px;
+	margin-left: 25%;
+}
 #download {
 	background-color: #D1A443;
 	padding: 20px 0 40px;
@@ -46,7 +53,15 @@ h1,h2,h3,h4,h5,h6 {
 #footer a {
 	color: #FFF;
 }
-@media(max-width: 900px) {
+@media(max-width: 970px) {
+	#about p {
+		font-size: 1.3em;
+		margin-top: 40px;
+		padding-left: 0px;
+		line-height: 30px;
+		margin-left: 0;
+	}
+	#about img { display:  none; }
 	.sub_container {
 		width: 100%;
 	}
